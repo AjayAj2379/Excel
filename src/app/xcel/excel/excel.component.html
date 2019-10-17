@@ -1,0 +1,12 @@
+<div>
+
+    <input type="file" accept=".xls,.xlsx" id="file" class="hide_file" #ref (change)='onSubmit($event)' style="display: none">
+   
+     </div>
+   
+     <button class="btn btn-primary" onclick="document.getElementById('file').click()">Brose</button>
+     <br>
+     <br>
+     <input type="text"  class="form-control col-md-6" value="{{fileName}}">
+   
+     <br>

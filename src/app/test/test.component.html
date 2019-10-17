@@ -1,0 +1,47 @@
+
+
+
+
+  <!-- <section>
+      <mat-form-field (click)="onSubmit()" class="example-full-width">
+
+          <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="date"  [(ngModel)]="value" placeholder="choose a  date">
+      <mat-datepicker-toggle matSuffix [for]="date" ></mat-datepicker-toggle>
+          <mat-datepicker touchUi #date></mat-datepicker>
+        </mat-form-field> -->
+    <!-- <mat-form-field>
+      <input matInput placeholder="name" [(ngModel)]="">
+    </mat-form-field> -->
+    <!-- <button (click)="onSubmit(date)">GEt</button>
+    <mat-slider #slider thumbLabel (change)="onSubmit(slider)"></mat-slider>
+
+  </section>
+  <section>
+      <div class="example-button-row">
+          <button mat-button>Basic</button>
+          <button mat-button color="primary">Primary</button>
+          <button mat-button color="accent">Accent</button>
+          <button mat-button color="warn">Warn</button>
+          <button mat-button disabled>Disabled</button>
+          <a mat-button routerLink=".">Link</a>
+        </div>
+  </section>
+
+ <mat-card  style="height:100px;width:400px;left:10px">
+
+ </mat-card> -->
+
+ <div>
+
+ <input type="file" accept=".xls,.xlsx" id="file" class="hide_file" #ref (change)='onSubmit($event)' style="display: none">
+
+  </div>
+
+  <button class="btn btn-primary" onclick="document.getElementById('file').click()">Browse</button>
+  <br>
+  <br>
+  <input type="text"  class="form-control col-md-6" value="{{fileName}}">
+
+  <br>
+  <div *ngIf="isValid">Choose only .xls or .xlsx files</div>
+
