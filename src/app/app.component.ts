@@ -8,10 +8,10 @@ import { ThrowStmt } from '@angular/compiler';
 })
 export class AppComponent implements OnInit {
   
-
+vaiable : any ;
   ngOnInit()
   {
-
+  
   }
  
 }
