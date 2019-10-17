@@ -1,0 +1,18 @@
+<p>nngx-charts works!</p>
+
+<mat-card style="background-color:blanchedalmond;height:450px; width: 510px">
+    <ngx-charts-bar-vertical
+    [view]="view"
+    [scheme]="colorScheme"
+    [results]="data"
+    [gradient]="gradient"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [legend]="showLegend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    (select)="onSelect($event)">
+  </ngx-charts-bar-vertical>
+</mat-card>
